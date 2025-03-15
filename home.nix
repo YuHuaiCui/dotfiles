@@ -41,6 +41,7 @@
     gcc
     nodejs
     cmake
+    sbcl
     
     # tools
     zip
