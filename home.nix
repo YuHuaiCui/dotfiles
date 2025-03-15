@@ -42,6 +42,7 @@
     nodejs
     cmake
     sbcl
+    swi-prolog
     
     # tools
     zip
