@@ -115,8 +115,4 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-
-  # hyprland config
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals =  [ pkgs.xdg-desktop-portak-gtk ];
 }
