@@ -27,7 +27,6 @@
 
     # apps
     obsidian
-    spotify
     equibop # discord client
     zen-browser.default
     
