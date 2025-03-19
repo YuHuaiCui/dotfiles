@@ -100,6 +100,7 @@
 
   # hyprland configs
   programs.hyprland.enable = true;
+  programs.hyprland.withUWSM = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
