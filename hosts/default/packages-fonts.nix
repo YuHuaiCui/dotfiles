@@ -39,6 +39,7 @@
     xdg-user-dirs
     xdg-utils
     papirus-icon-theme
+    papirus-folders 
 
     fastfetch
     (mpv.override {scripts = [mpvScripts.mpris];}) # with tray
