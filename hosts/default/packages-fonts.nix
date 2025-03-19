@@ -171,4 +171,34 @@
     ];
     };
 
+    # gtk stuff for thunar
+    options.hmModules.styles.gtk = mkOption {
+    enabled = mkOption {
+      type = types.bool;
+      default = true;
+    };
+  };
+  
+  # Configuration for GTK settings
+  config = {
+    gtk = {
+      # Setting the GTK icon theme and the custom Papirus-Dark with Catppuccin flavor
+      iconTheme = {
+        name = "Papirus-Dark";
+        package = pkgs.catppuccin-papirus-folders.override {
+          flavor = "mocha";
+          accent = "sapphire";
+        };
+      };
+      
+      # Configurations for GTK3 and GTK4 dark mode
+      gtk3.extraConfig = {
+        gtk-application-prefer-dark-theme = 1;
+      };
+      gtk4.extraConfig = {
+        gtk-application-prefer-dark-theme = 1;
+      };
+    };
+    
+
   }
