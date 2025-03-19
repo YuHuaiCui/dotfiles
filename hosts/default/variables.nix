@@ -3,7 +3,7 @@
 
 {
   # Git Configuration ( For Pulling Software Repos )
-  gitUsername = "YuHuaiCui";
+  gitUsername = "cyh";
   gitEmail = "hello@dcui.dev";
 
   # Hyprland Settings
