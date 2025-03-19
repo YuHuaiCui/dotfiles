@@ -219,8 +219,6 @@ in {
   powerManagement = {
   	enable = true;
 	  cpuFreqGovernor = "schedutil";
-
-    services.tlp.enable = true;
   };
  
   # Bluetooth
