@@ -61,12 +61,10 @@
     wireplumber
     xdg-desktop-portal
     hyprpolkitagent
-    qt5-wayland
-    qt6-wayland
     waybar
     swww
     wofi
-    thunar
+    xfce.thunar
 
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
