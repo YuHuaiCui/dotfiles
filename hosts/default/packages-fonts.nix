@@ -38,6 +38,7 @@
     wget
     xdg-user-dirs
     xdg-utils
+    papirus-icon-theme
 
     fastfetch
     (mpv.override {scripts = [mpvScripts.mpris];}) # with tray
