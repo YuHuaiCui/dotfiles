@@ -33,6 +33,7 @@
     libnotify
     openssl #required by Rainbow borders
     pciutils
+    tlp
     vim
     wget
     xdg-user-dirs
