@@ -53,7 +53,16 @@
     fd
     acpi
     libnotify    
-    
+
+    # hyprland
+    kitty
+    waybar
+    dunst
+    libnotify
+    rofi-wayland
+
+
+
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
     # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
@@ -114,4 +123,9 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  # hyprland
+  programs.hyprland.enable = true
+  xdg.portal.enable = true
+  xdg.portal.extraPortals =  [ pkgs.xdg-desktop-portak-gtk ];
 }
