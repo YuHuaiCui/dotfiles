@@ -127,7 +127,7 @@
   programs.home-manager.enable = true;
 
   # hyprland
-  programs.hyprland.enable = true;
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals =  [ pkgs.xdg-desktop-portak-gtk ];
+  # programs.hyprland.enable = true;
+  # xdg.portal.enable = true;
+  # xdg.portal.extraPortals =  [ pkgs.xdg-desktop-portak-gtk ];
 }
