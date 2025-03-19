@@ -38,6 +38,9 @@
     wget
     xdg-user-dirs
     xdg-utils
+    resources
+
+    # gtk theme (for thunar)
     papirus-icon-theme
     papirus-folders
     gnome-themes-extra
