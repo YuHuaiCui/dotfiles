@@ -83,11 +83,14 @@
 
   gtk = {
     enable = true; # Enable GTK configuration
+    theme = {
+    name = "Dracula";
+    };
     iconTheme = {
       name = "Papirus-Dark";
       package = pkgs.catppuccin-papirus-folders.override {
         flavor = "mocha";
-        accent = "mauve";
+        accent = "sapphire";
       };
     };
     gtk3.extraConfig = {
