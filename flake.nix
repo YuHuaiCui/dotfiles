@@ -11,7 +11,7 @@
 
   outputs = inputs@{ self, nixpkgs, home-manager, zen-browser, ... }:
     let
-      host = "nixos";
+      host = "default";
       username = "cyh";
 
       pkgs = import nixpkgs {
