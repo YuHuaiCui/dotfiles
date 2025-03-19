@@ -47,7 +47,6 @@
     zip
     unzip
     bat
-    killall
     eza
     fd
     acpi
