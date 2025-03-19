@@ -11,8 +11,8 @@
 
   outputs = inputs@{ self, nixpkgs, home-manager, zen-browser, ... }:
     let
-      host = "cyh-nixos";
-      username = "dcui";
+      host = "nixos";
+      username = "cyh";
 
       pkgs = import nixpkgs {
         inherit system;
