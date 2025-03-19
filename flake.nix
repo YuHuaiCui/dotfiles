@@ -39,8 +39,8 @@
     homeConfigurations = {
       "${username}" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ /hosts/${host}/home.nix ];
-        extraSpecialArgs = { zen-browser = zen; };
+        modules = [ ./hosts/${host}/home.nix ];
+        extraSpecialArgs = { zen-browser = zen; username = username; };
       };
     };
   };
