@@ -6,25 +6,40 @@
     home-manager.url = "github:nix-community/home-manager/release-24.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    ags.url = "github:aylur/ags/v1"; # aylurs-gtk-shell-v1
   };
 
-  outputs = { self, nixpkgs, home-manager, zen-browser, ... }:
+  outputs = inputs@{ self, nixpkgs, home-manager, zen-browser, ... }:
     let
+      host = "cyh-nixos";
+      username = "dcui";
+
+      pkgs = import nixpkgs {
+        inherit system;
+        config = {
+          allowUnfree = true;
+        };
+      };
+      
       lib = nixpkgs.lib;
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system}; 
       zen = zen-browser.packages."${system}";
     in {
     nixosConfigurations = {
-      nixos = lib.nixosSystem {
-        inherit system;
-        modules = [ ./configuration.nix ];
+      "${host}" = nixpkgs.lib.nixosSystem rec {
+        specialArgs = { 
+          inherit system;
+          inherit inputs;
+          inherit username;
+          inherit host;
+        };
+        modules = [ ./hosts/${host}./configuration.nix ];
       };
     };
     homeConfigurations = {
-      cyh = home-manager.lib.homeManagerConfiguration {
+      "${username}" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ ./home.nix ];
+        modules = [ /hosts/${host}./home.nix ];
         extraSpecialArgs = { zen-browser = zen; };
       };
     };

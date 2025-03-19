@@ -1,10 +1,10 @@
-{ config, pkgs, zen-browser, ... }:
+{ config, pkgs, username, zen-browser, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
-  home.username = "cyh";
-  home.homeDirectory = "/home/cyh";
+  home.username = "${username}";
+  home.homeDirectory = "/home/${username}";
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
