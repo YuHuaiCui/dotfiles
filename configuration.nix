@@ -37,11 +37,6 @@
   # services.xserver.displayManager.gdm.enable = true;
   # services.xserver.desktopManager.gnome.enable = true;
 
-  # Enable hyprland as de
-  services.xserver.enable = true;
-  services.xserver.displayManager.sddm.enable = true; # SDDM as a lightweight alternative to GDM
-  services.xserver.windowManager.hyprland.enable = true;
-
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
