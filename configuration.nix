@@ -88,7 +88,21 @@
     wget
     git
     neovim
+
+    # hyprland
+    hyprland
+    xdg-desktop-portal-gtk
+    kitty
+    waybar
+    dunst
+    libnotify
+    rofi-wayland
   ];
+
+  # hyprland configs
+  programs.hyprland.enable = true;
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals =  [ pkgs.xdg-desktop-portak-gtk ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

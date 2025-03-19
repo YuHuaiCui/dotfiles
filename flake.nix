@@ -22,7 +22,7 @@
       };
     };
     homeConfigurations = {
-      root = home-manager.lib.homeManagerConfiguration {
+      cyh = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [ ./home.nix ];
         extraSpecialArgs = { zen-browser = zen; };
