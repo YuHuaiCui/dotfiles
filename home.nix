@@ -52,19 +52,6 @@
     eza
     fd
     acpi
-    libnotify    
-
-    # hyprland
-    sddm
-    dunst
-    pipewire
-    wireplumber
-    xdg-desktop-portal
-    hyprpolkitagent
-    waybar
-    swww
-    wofi
-    xfce.thunar
 
 
     # # It is sometimes useful to fine-tune packages, for example, by applying

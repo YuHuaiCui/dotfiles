@@ -30,12 +30,12 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_CA.UTF-8";
 
-  # # Enable the X11 windowing system.
-  # services.xserver.enable = true;
+  # Enable the X11 windowing system.
+  services.xserver.enable = true;
 
-  # # Enable the GNOME Desktop Environment.
-  # services.xserver.displayManager.gdm.enable = true;
-  # services.xserver.desktopManager.gnome.enable = true;
+  # Enable the GNOME Desktop Environment.
+  services.xserver.displayManager.gdm.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -89,18 +89,27 @@
     git
     neovim
 
-    # hyprland
-    hyprland
-    kitty
-    waybar
-    dunst
-    libnotify
-    rofi-wayland
-  ];
+    # sys
+    bc
+    baobab
+    clang
+    curl
+    cpufrequtils
+    duf
+    ffmpeg
+    glib
+    gsettings-qt
+    killall
+    libappindicator
+    pciutils
+    xdg-user-dirs
+    xdg-utils
+    fastfetch
 
-  # hyprland configs
-  programs.hyprland.enable = true;
-  programs.hyprland.withUWSM = true;
+    # fonts
+    font-awesome
+    jetbrains-mono
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
