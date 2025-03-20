@@ -99,7 +99,10 @@
     gtk4.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
     };
+    cursorTheme.name = "phinger-cursors-dark";
+    cursorTheme.size = 24;
   };
+
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a

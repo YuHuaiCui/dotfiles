@@ -39,6 +39,7 @@
     xdg-user-dirs
     xdg-utils
     resources
+    xcur2png
 
     # gtk theme (for thunar)
     papirus-icon-theme
@@ -92,6 +93,7 @@
     xarchiver
     yad
     yt-dlp
+    phinger-cursors
 
     #waybar  # if wanted experimental next line
     #(pkgs.waybar.overrideAttrs (oldAttrs: { mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];}))
