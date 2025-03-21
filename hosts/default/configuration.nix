@@ -305,6 +305,24 @@ in {
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # Network Manager Settings (for UWS and Eduraom)
+  networking.networkmanager.settings = {
+    service_eduroam = {
+      Type       = "wifi";
+      Name       = "eduroam";
+      EAP        = "peap";
+      Phase2     = "MSCHAPV2";
+      CACertFile = "/etc/ssl/certs/ca-bundle.crt";
+    };
+    service_UWS = {
+      Type       = "wifi";
+      Name       = "UWS";
+      EAP        = "peap";
+      Phase2     = "MSCHAPV2";
+      CACertFile = "/etc/ssl/certs/ca-bundle.crt";
+    };
+  };
+
   # Set your time zone.
   time.timeZone = "America/Edmonton";
 
