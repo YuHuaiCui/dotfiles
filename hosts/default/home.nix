@@ -50,6 +50,7 @@
     fd
     acpi
     scons
+    zlib
 
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
