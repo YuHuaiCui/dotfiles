@@ -45,11 +45,11 @@
     
     # tools
     zip
-    unzip
     bat
     eza
     fd
     acpi
+    scons
 
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
