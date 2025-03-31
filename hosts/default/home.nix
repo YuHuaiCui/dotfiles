@@ -42,6 +42,9 @@
     cmake
     sbcl
     swi-prolog
+
+    # office suite
+    libreoffice-fresh
     
     # tools
     zip

@@ -40,13 +40,12 @@
     xdg-utils
     resources
     xcur2png
-
+ 
     # gtk theme (for thunar)
     papirus-icon-theme
     papirus-folders
     gnome-themes-extra
-    dracula-theme
-
+    dracula-theme    
 
     fastfetch
     (mpv.override {scripts = [mpvScripts.mpris];}) # with tray
