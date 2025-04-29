@@ -42,6 +42,7 @@
     cmake
     sbcl
     swi-prolog
+    texliveFull
 
     # office suite
     libreoffice-fresh
