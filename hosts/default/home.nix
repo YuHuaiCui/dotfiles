@@ -43,6 +43,7 @@
     sbcl
     swi-prolog
     texliveFull
+    google-chrome
 
     # office suite
     libreoffice-fresh
